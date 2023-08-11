@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+	<style>
+	body {
+		background-image: url("image.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+		background-color: #cccccc;
+
+		}
+	
+
+	</style>
+	<head>	
+		<meta charset="utf-8">
+		<title>Word Search Puzzle</title>
+	</head>
+	<body>
+		<h1>Word Search Puzzle <style class="font-weight:bold;"></style></h1>
+		<h2 id = "instructions"></h2>
+		
+		<button id = "newGameButton" type = "button">New Game</button>
+		<div id = "wordboard"></div>
+		<div id = "wordlist"></div>
+		<button id = "solveButton" type = "button">View all the answers?</button>
+		<a href="login.html">Want to Quit ?</a>
+
+		<link rel = "stylesheet" type="text/css" href = "css/wordsearch.css">
+
+		<script src = https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js></script>
+
+		<script src = "js/wordpaths_easy.js"></script>
+		<script src = "js/wordsearchcontroller_easy.js"></script>
+		<script src = "js/wordsearchlogic_easy.js"></script>
+		<script src = "js/wordsearchview.js"></script>
+
+		<script>	
+			$(document).ready( function() {
+				new WordSearchController("#wordboard", "#wordlist", "#solveButton", "#newGameButton", "#instructions", 
+					"#wordTheme");
+			})
+		</script>
+	</body>
+</html>

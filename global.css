@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --font-montserrat: Montserrat;
+
+  /* font sizes */
+  --font-size-xl: 20px;
+  --font-size-sm: 14px;
+  --font-size-11xl: 30px;
+
+  /* Colors */
+  --color-white: #fff;
+  --color-black: #000;
+
+  /* Paddings */
+  --padding-15xl: 34px;
+  --padding-8xl: 27px;
+  --padding-mid: 17px;
+  --padding-6xl: 25px;
+
+  /* border radiuses */
+  --br-xl: 20px;
+}

@@ -1,0 +1,188 @@
+ 
+
+ *{
+
+	text-align: center;
+	font-family:  "Moon", Arial, sans serif;
+	font-weight: normal;
+
+}
+
+h1, h2, #wordTheme, #solveButton, #newGameButton, .listWord {
+
+	padding: 5px;
+
+}
+
+/*border of headings and buttons*/
+h1, h2, #wordTheme, #solveButton, #newGameButton {
+
+	border: 2px #355c7d;
+	border-radius: 8px;
+
+} 
+
+
+/*bg colour of two headings and two boxes(except buttons)*/
+h1, h2, .cell, #wordTheme, #wordlist {
+
+	/*background-color: rgb(245, 187, 235);*/
+	background-color: #b1c3d2;
+	
+}
+
+h1, h2 {
+
+	margin: 10px auto 10px auto;
+	display: table;
+
+}
+
+/*bg of page*/
+body {
+
+	background-color: rgb(211, 171, 208);
+
+	
+
+}
+
+#wordTheme {
+
+	border-radius: 8px;
+
+}
+
+
+/*board border*/
+#wordboard {
+
+	margin: 20px auto 0 auto;
+	border: 2px rgb(53, 92, 125);
+	display: table;
+	min-width: 600px;
+
+}
+
+.boardRow {
+
+	display: table-row;
+
+}
+
+.cell {
+
+	margin: 0 auto;
+	border: 2px rgb(53, 92, 125);
+	display: table-cell;
+	height:30px;
+	width: 30px;
+	font-size: 15px;
+	padding: 10;
+	outline: 10;
+
+	/*ensures text can't be accidentally selected*/
+	cursor: default; 
+	-moz-user-select: none;
+    -ms-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+
+}
+
+/*selection squares*/
+.cell:hover {
+
+	background-color: rgb(145, 170, 192);
+	
+
+}
+
+/*while selecting*/
+.cell.selectable {
+
+	background-color: rgb(145, 170, 192);
+
+}
+
+/*after selecting*/
+.cell.selected { 
+
+	background-color: rgb(53, 92, 125);
+
+}
+
+/*after found*/
+.cell.found {
+
+	background-color: rgb(53, 92, 125);
+	border: 1px rgba(53, 92, 125);
+	font-weight: bold;
+
+}
+
+
+/*border of wordlist box*/
+#wordlist { 
+
+	margin: 40px auto 0 auto;
+	border: 2px rgb(53, 92, 125);
+	display: table;
+	min-width: 600px;
+	font-size: 17px;
+	text-align: center;
+	
+}
+
+.listRow {
+
+	display: table-row;
+
+}
+
+.listWord {
+
+	display: table-cell;
+	
+}
+
+/*wordstrike*/
+.listWord.found {
+
+	color: rgb(53, 92, 125);
+	text-decoration: line-through;
+	
+}
+
+
+/*buttons*/
+#solveButton, #newGameButton {
+
+	background-color: rgb(53, 92, 125);
+	margin: 40px auto 40px auto;
+	display: block;
+	outline: 0;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+
+}
+
+@font-face {
+
+	font-family: "Moon";
+	src: url("../fonts/Moon-Regular.woff2") format("woff2"),
+		 url("../fonts/Moon-Regular.woff") format("woff");
+	font-weight: normal;
+
+}
+
+@font-face {
+
+	font-family: "Moon";
+	src: url("../fonts/Moon-Bold.woff2") format("woff2"),
+		 url("../fonts/Moon-Bold.woff") format("woff");
+	font-weight: bold;
+
+}
